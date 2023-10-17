@@ -1,11 +1,11 @@
 package andrei.gherman.petclinic.services.map;
 
 import andrei.gherman.petclinic.model.Vet;
-import andrei.gherman.petclinic.services.CrudService;
+import andrei.gherman.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends MapService<Vet,Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends MapService<Vet,Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -31,4 +31,6 @@ public class VetServiceMap extends MapService<Vet,Long> implements CrudService<V
     public Vet findById(Long id) {
         return super.findById(id);
     }
+
+
 }
